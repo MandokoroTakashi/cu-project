@@ -35,7 +35,7 @@ if($res){
                 </p>
             </div>
             <p>
-                <a href="#" class="edit-btn">[edit]</a>
+                <a href="edit.php?id=<?php echo $result['id']; ?>" class="edit-btn">[edit]</a>
                 <a href="delete.php?id=<?php echo $result['id']; ?>" class="delete-btn">[delete]</a>
             </p>
         </li>
