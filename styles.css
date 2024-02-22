@@ -1,61 +1,4 @@
-/* body{
-  margin: 0;
-  padding: 0;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
 
-
-li{
-  list-style: none;
-  padding: 10px;
-  border: solid 1px black;
-  margin-bottom: 2px;
-  border-radius: 4px;
-  display: flex;
-  justify-content: space-between;
-}
-
-a{
-  text-decoration: none;
-  color: black;
-  cursor: pointer;
-}
-
-p{
-  padding: 0;
-  margin: 0;
-}
-
-ul{
-  padding: 0;
-}
-
-.container{
-  width: 800px;
-  padding: 40px;
-  margin: 0 auto;
-  background-color: #f6f5f5;
-}
-
-.part{
-  display: flex;
-}
-
-input{
-  padding: 4px;
-  border-radius: 2px;
-  border: #fff;
-}
-
-button{
-  padding: 4px;
-  border-radius: 2px;
-  border: #fff;
-  background-color: #fff;
-} */
-
-
-/* styles.css */
 
 body {
   font-family: 'Arial', sans-serif;
@@ -80,18 +23,20 @@ h2 {
 form {
   display: flex;
   margin-bottom: 20px;
+  flex-direction: column; 
 }
 
 label {
   font-weight: bold;
   margin-right: 10px;
+  margin-bottom: 5px; /* 追加 */
 }
 
 input[type="text"] {
-  flex: 1;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 3px;
+  margin-bottom: 10px; 
 }
 
 button {
@@ -140,4 +85,9 @@ li {
 .delete-btn:hover,
 .edit-btn:hover {
   background-color: #2980b9;
+}
+
+.checked_p{
+  text-decoration: line-through;
+  color: #ccc;
 }

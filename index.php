@@ -25,7 +25,9 @@ if($res){
 
   <h2>Add New Task</h2>
   <form action="todo.php" method="post">
+    <div class="label">
       <label for="task">Task:</label>
+    </div>
       <input type="text" id="task" name="task" required>
       <button type="submit">Add Task</button>
   </form>
