@@ -12,6 +12,7 @@ use App\Controller\AppController;
  */
 class MessagesController extends AppController
 {
+    
     /**
      * Index method
      *
