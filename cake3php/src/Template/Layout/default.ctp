@@ -53,6 +53,9 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         <?= $this->fetch('content') ?>
     </div>
     <footer>
+        <div class="footer">
+            <p>ここはフッターです</p>
+        </div>
     </footer>
 </body>
 </html>
