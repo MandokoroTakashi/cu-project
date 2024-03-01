@@ -9,8 +9,8 @@ use Cake\Validation\Validator;
 /**
  * Messages Model
  *
- * @property &\Cake\ORM\Association\BelongsTo $Users
- * @property &\Cake\ORM\Association\BelongsTo $Categories
+ * @property \App\Model\Table\UsersTable&\Cake\ORM\Association\BelongsTo $Users
+ * @property \App\Model\Table\CategoriesTable&\Cake\ORM\Association\BelongsTo $Categories
  *
  * @method \App\Model\Entity\Message get($primaryKey, $options = [])
  * @method \App\Model\Entity\Message newEntity($data = null, array $options = [])

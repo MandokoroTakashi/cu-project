@@ -8,6 +8,10 @@
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('New Message'), ['action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Categories'), ['controller' => 'Categories', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Category'), ['controller' => 'Categories', 'action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="messages index large-9 medium-8 columns content">
@@ -33,8 +37,8 @@
                 <td><?= h($message->body) ?></td>
                 <td><?= h($message->created_at) ?></td>
                 <td><?= h($message->updated_at) ?></td>
-                <td><?= $this->Number->format($message->user_id) ?></td>
-                <td><?= $this->Number->format($message->category_id) ?></td>
+                <td><?= $message->has('user') ? $this->Html->link($message->user->id, ['controller' => 'Users', 'action' => 'view', $message->user->id]) : '' ?></td>
+                <td><?= $message->has('category') ? $this->Html->link($message->category->name, ['controller' => 'Categories', 'action' => 'view', $message->category->id]) : '' ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $message->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $message->id]) ?>

@@ -13,6 +13,9 @@ use Cake\ORM\Entity;
  * @property \Cake\I18n\FrozenTime|null $updated_at
  * @property int|null $user_id
  * @property int|null $category_id
+ *
+ * @property \App\Model\Entity\User $user
+ * @property \App\Model\Entity\Category $category
  */
 class Message extends Entity
 {
@@ -32,5 +35,7 @@ class Message extends Entity
         'updated_at' => true,
         'user_id' => true,
         'category_id' => true,
+        'user' => true,
+        'category' => true,
     ];
 }
