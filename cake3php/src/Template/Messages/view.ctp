@@ -37,7 +37,7 @@
         </tr>
     </table>
     <div>
-        <ul>
+        <ul class="deleteEdit">
             <li><?= $this->Html->link(__('Edit Message'), ['action' => 'edit', $message->id]) ?> </li>
             <li><?= $this->Form->postLink(__('Delete Message'), ['action' => 'delete', $message->id], ['confirm' => __('Are you sure you want to delete # {0}?', $message->id)]) ?> </li>
         </ul>

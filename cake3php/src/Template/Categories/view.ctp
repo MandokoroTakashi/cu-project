@@ -25,7 +25,7 @@
             <td><?= h($category->updated_at) ?></td>
         </tr>
     </table>
-    <ul>
+    <ul class="deleteEdit">
         <li><?= $this->Html->link(__('Edit Category'), ['action' => 'edit', $category->id]) ?> </li>
         <li><?= $this->Form->postLink(__('Delete Category'), ['action' => 'delete', $category->id], ['confirm' => __('Are you sure you want to delete # {0}?', $category->id)]) ?> </li>
     </ul>

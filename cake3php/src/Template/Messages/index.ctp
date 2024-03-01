@@ -28,7 +28,7 @@
                 <td><?= h($message->body) ?></td>
                 <td><?= h($message->created_at) ?></td>
                 <td><?= h($message->updated_at) ?></td>
-                <td><?= $message->has('user') ? $this->Html->link($message->user->id, ['controller' => 'Users', 'action' => 'view', $message->user->id]) : '' ?></td>
+                <td><?= $message->has('user') ? $this->Html->link($message->user->username, ['controller' => 'Users', 'action' => 'view', $message->user->id]) : '' ?></td>
                 <td><?= $message->has('category') ? $this->Html->link($message->category->name, ['controller' => 'Categories', 'action' => 'view', $message->category->id]) : '' ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $message->id]) ?>

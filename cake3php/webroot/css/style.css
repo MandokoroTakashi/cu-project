@@ -522,3 +522,18 @@ table td {
     vertical-align: top;
     word-break: break-all;
 }
+
+.deleteEdit{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.deleteEdit > li{
+    list-style: none;
+}
+
+.deleteEdit > li >a{
+    padding: 10px;
+    border-radius: 4px;
+    border: 4px solid #4d8f97;
+}
