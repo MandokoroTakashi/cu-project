@@ -12,6 +12,7 @@ use Cake\ORM\Entity;
  * @property string $password
  * @property \Cake\I18n\FrozenTime|null $created_at
  * @property \Cake\I18n\FrozenTime|null $updated_at
+ * @property int|null $status
  *
  * @property \App\Model\Entity\Message[] $messages
  */
@@ -32,6 +33,7 @@ class User extends Entity
         'password' => true,
         'created_at' => true,
         'updated_at' => true,
+        'status' => true,
         'messages' => true,
     ];
 

@@ -78,6 +78,10 @@ class UsersTable extends Table
             ->dateTime('updated_at')
             ->allowEmptyDateTime('updated_at');
 
+        $validator
+            ->integer('status')
+            ->allowEmptyString('status');
+
         return $validator;
     }
 

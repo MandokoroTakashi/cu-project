@@ -4,16 +4,13 @@
  * @var \App\Model\Entity\User $user
  */
 ?>
+
 <div class="users view large-9 medium-8 columns content">
     <h3><?= h($user->id) ?></h3>
     <table class="vertical-table">
         <tr>
             <th scope="row"><?= __('Username') ?></th>
             <td><?= h($user->username) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Status') ?></th>
-            <td><?= h($user->status) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Email') ?></th>
@@ -28,6 +25,10 @@
             <td><?= $this->Number->format($user->id) ?></td>
         </tr>
         <tr>
+            <th scope="row"><?= __('Status') ?></th>
+            <td><?= $this->Number->format($user->status) ?></td>
+        </tr>
+        <tr>
             <th scope="row"><?= __('Created At') ?></th>
             <td><?= h($user->created_at) ?></td>
         </tr>
@@ -37,9 +38,9 @@
         </tr>
     </table>
     <ul class="deleteEdit">
-        <li><?= $this->Html->link(__('Edit User'), ['action' => 'edit', $user->id]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete User'), ['action' => 'delete', $user->id], ['confirm' => __('Are you sure you want to delete # {0}?', $user->id)]) ?> </li>
-    </ul>
+            <li><?= $this->Html->link(__('Edit user'), ['action' => 'edit', $user->id]) ?> </li>
+            <li><?= $this->Form->postLink(__('Delete user'), ['action' => 'delete', $user->id], ['confirm' => __('Are you sure you want to delete # {0}?', $user->id)]) ?> </li>
+        </ul>
     <div class="related">
         <h4><?= __('Related Messages') ?></h4>
         <?php if (!empty($user->messages)): ?>
