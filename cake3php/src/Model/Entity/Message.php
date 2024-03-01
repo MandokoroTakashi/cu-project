@@ -11,6 +11,8 @@ use Cake\ORM\Entity;
  * @property string|null $body
  * @property \Cake\I18n\FrozenTime|null $created_at
  * @property \Cake\I18n\FrozenTime|null $updated_at
+ * @property int|null $user_id
+ * @property int|null $category_id
  */
 class Message extends Entity
 {
@@ -28,5 +30,7 @@ class Message extends Entity
         'body' => true,
         'created_at' => true,
         'updated_at' => true,
+        'user_id' => true,
+        'category_id' => true,
     ];
 }

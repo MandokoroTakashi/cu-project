@@ -20,6 +20,8 @@
                 <th scope="col"><?= $this->Paginator->sort('body') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created_at') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('updated_at') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('user_id') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('category_id') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
         </thead>
@@ -31,6 +33,8 @@
                 <td><?= h($message->body) ?></td>
                 <td><?= h($message->created_at) ?></td>
                 <td><?= h($message->updated_at) ?></td>
+                <td><?= $this->Number->format($message->user_id) ?></td>
+                <td><?= $this->Number->format($message->category_id) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $message->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $message->id]) ?>

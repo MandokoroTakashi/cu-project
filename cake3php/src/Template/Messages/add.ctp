@@ -19,6 +19,8 @@
             echo $this->Form->control('body');
             echo $this->Form->control('created_at', ['empty' => true]);
             echo $this->Form->control('updated_at', ['empty' => true]);
+            echo $this->Form->control('user_id');
+            echo $this->Form->control('category_id');
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>
