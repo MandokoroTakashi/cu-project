@@ -29,10 +29,10 @@
             </tr>
         </thead>
         <tbody>
-            <!-- <?php foreach ($messages as $message): ?>
+            <?php foreach ($messages as $message): ?>
                 <tr>
                     <td><?= $this->Number->format($message->id) ?></td>
-                    <!-- <td><?= $this->Number->format($message->status) ?></td> -->
+                    <td><?= $this->Number->format($message->status) ?></td>
                     <td><?= $message->has('category') ? h($message->category->name) : '' ?></td>
                     <td><?= $message->has('user') ? $this->Html->link($message->user->username, ['controller' => 'Users', 'action' => 'view', $message->user->id]) : '' ?></td>
                     <td><?= h($message->title) ?></td>
@@ -45,16 +45,7 @@
                         <?php endif; ?>
                     </td>
                 </tr>
-             <?php endforeach; ?> -->
-                <tr>
-                    <td><?= h($messages->id) ?></td>
-                    <td><?= h($cate_list[$messages->category_id]) ?></td>
-                    <td><?= h($messages->title) ?></td>
-                    <td><?= h($messages->create_timestamp) ?></td>
-                    <td class="actions">
-                        <?= $this->Html->link(__('View'), ['controller' => 'Messages', 'action' => 'view', $message->id]) ?>
-                    </td>
-                </tr>
+             <?php endforeach; ?>
         </tbody>
     </table>
     <div class="paginator">
