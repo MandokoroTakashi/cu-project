@@ -11,6 +11,7 @@
         <?php
             echo $this->Form->control('username');
             echo $this->Form->control('email');
+            echo $this->Form->control('status');
             echo $this->Form->control('password');
         ?>
     </fieldset>

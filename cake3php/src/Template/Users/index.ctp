@@ -12,6 +12,7 @@
                 <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('username') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('email') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('status') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('password') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created_at') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('updated_at') ?></th>
@@ -24,6 +25,7 @@
                 <td><?= $this->Number->format($user->id) ?></td>
                 <td><?= h($user->username) ?></td>
                 <td><?= h($user->email) ?></td>
+                <td><?= h($user->status) ?></td>
                 <td><?= h($user->password) ?></td>
                 <td><?= h($user->created_at) ?></td>
                 <td><?= h($user->updated_at) ?></td>

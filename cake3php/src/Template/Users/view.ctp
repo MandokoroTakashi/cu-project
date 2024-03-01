@@ -12,6 +12,10 @@
             <td><?= h($user->username) ?></td>
         </tr>
         <tr>
+            <th scope="row"><?= __('Status') ?></th>
+            <td><?= h($user->status) ?></td>
+        </tr>
+        <tr>
             <th scope="row"><?= __('Email') ?></th>
             <td><?= h($user->email) ?></td>
         </tr>
